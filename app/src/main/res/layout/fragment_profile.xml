@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appBar"
+            layout="@layout/layout_header" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appBar"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/appBar"
+                android:clipToPadding="false"
+                android:padding="@dimen/_15sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/imvCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imvUserProfile"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:background="@color/white"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/placeholder" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_plus"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignEnd="@id/imvUserProfile"
+                            android:layout_alignBottom="@id/imvUserProfile"
+                            android:background="@drawable/bg_circle"
+                            android:padding="@dimen/_5sdp"
+                            app:srcCompat="@drawable/ic_camera" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnNormalSize"
+                    android:layout_below="@id/imvCardView"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/bg_edit_rounded"
+                    android:fontFamily="@font/montserrat_light"
+                    android:hint="Enter Name"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textColorHint="@color/color_B7B7B7"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnNormalSize"
+                    android:layout_below="@id/etName"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/bg_edit_rounded"
+                    android:fontFamily="@font/montserrat_light"
+                    android:hint="Enter Mobile Number"
+                    android:inputType="phone"
+                    android:maxLength="20"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textColorHint="@color/color_B7B7B7"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnNormalSize"
+                    android:layout_below="@id/etMobile"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/bg_edit_rounded"
+                    android:fontFamily="@font/montserrat_light"
+                    android:hint="Enter Email Id"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textColorHint="@color/color_B7B7B7"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etEmail"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/bg_edit_rounded"
+                    android:fontFamily="@font/montserrat_light"
+                    android:gravity="top|left"
+                    android:hint="Submit your Bio"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:maxLines="10"
+                    android:minHeight="@dimen/_70sdp"
+                    android:minLines="5"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/color_B7B7B7"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnNormalSize"
+                    android:layout_below="@id/etBio"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/bg_rounded_dark_blue_7sdp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:foreground="@drawable/ripple_rec"
+                    android:text="Edit Profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="@dimen/_15sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="@dimen/logo_width"
+                android:layout_height="@dimen/logo_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/_60sdp"
+                android:src="@drawable/logo_blue" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivLogo"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Verify Otp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtSizeXLarge" />
+
+            <RelativeLayout
+                android:id="@+id/rlGetOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvLogin"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnNormalSize"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/bg_edit_rounded"
+                    android:digits="0123456789"
+                    android:fontFamily="@font/montserrat_light"
+                    android:hint="Mobile"
+                    android:inputType="phone"
+                    android:maxLength="20"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textColorHint="@color/color_B7B7B7"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnGetOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnNormalSize"
+                    android:layout_below="@id/etMobile"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:background="@drawable/bg_rounded_dark_blue_7sdp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:foreground="@drawable/ripple_rec"
+                    android:text="Get Otp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/txtSizeNormal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlVerifyOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvLogin"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etOTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnNormalSize"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/bg_edit_rounded"
+                    android:digits="0123456789"
+                    android:fontFamily="@font/montserrat_light"
+                    android:hint="Enter OTP"
+                    android:inputType="phone"
+                    android:maxLength="4"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textColorHint="@color/color_B7B7B7"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVerify"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnNormalSize"
+                    android:layout_below="@id/etOTP"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/bg_rounded_dark_blue_7sdp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:foreground="@drawable/ripple_rec"
+                    android:text="Verify"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvResendOtp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnVerify"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:foreground="@drawable/ripple_rec"
+                    android:onClick="onClick"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Resend OTP"
+                    android:textColor="@color/color_004EB4"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

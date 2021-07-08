@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/ic_unselect_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/menuBooking"
+        android:icon="@drawable/ic_unselect_booking"
+        android:title="Booking" />
+
+
+    <item
+        android:id="@+id/menuBlog"
+        android:icon="@drawable/ic_unselect_blog"
+        android:title="Blog" />
+
+    <item
+        android:id="@+id/menuProfile"
+        android:icon="@drawable/ic_unselect_profile"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/menuSupport"
+        android:icon="@drawable/ic_unselect_support"
+        android:title="Support" />
+</menu>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_5sdp"
+        android:background="@color/statusBarAll"
+        >
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingHorizontal="@dimen/_15sdp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            app:srcCompat="@drawable/ic_left_arrow"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:foreground="@drawable/ripple_round"
+            android:onClick="onClick"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Booking"
+            android:textSize="@dimen/txtSizeNormal"
+            android:textColor="@color/colorBlack"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_centerHorizontal="true"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            app:srcCompat="@drawable/ic_notification"
+            android:tint="@color/colorBlack"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:foreground="@drawable/ripple_round"
+            android:onClick="onClick"
+            android:visibility="visible"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEnd"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:text="End"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:foreground="@drawable/ripple_rec"
+            android:onClick="onClick"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="@dimen/txtSizeNormal"
+            android:background="@drawable/bg_rounded_dark_blue"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <View
+        style="@style/view_line"
+        android:layout_below="@id/rlHeader"
+        />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appBar"
+            layout="@layout/layout_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@drawable/bg_rounded_location"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:weightSum="1">
+
+           <!-- <Spinner
+                android:id="@+id/spinnerLocation"
+                style="@style/spinnerDropDownItemStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_D6E7FF"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/select_blog_category"
+                android:foreground="@drawable/ripple_rec"
+                android:popupBackground="@color/white" />-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBlogCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_D6E7FF"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat_regular"
+                android:foreground="@drawable/ripple_rec"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Blog Category"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txtSizeNormal" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_down_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBlog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/row_blog" />
+
+            <include
+                android:id="@+id/layoutError"
+                layout="@layout/layout_error_show" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

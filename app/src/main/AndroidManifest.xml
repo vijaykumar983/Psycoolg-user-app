@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.psycoolg">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <application
+        android:name="com.psycoolg.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!-- SplashActivity -->
+        <activity android:name="com.psycoolg.ui.components.activities.splash.SplashActivity"
+            android:theme="@style/AppThemeStatusBarSplash"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--IntroActivity-->
+        <activity
+            android:name="com.psycoolg.ui.components.activities.intro.IntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeStatusBarIntro"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"  />
+
+        <!-- LoginActivity -->
+        <activity
+            android:name="com.psycoolg.ui.components.activities.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeStatusBarPrimaryColor"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <!-- RegisterActivity -->
+        <activity
+            android:name="com.psycoolg.ui.components.activities.register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeStatusBarPrimaryColor"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <!--StaticPageActivity-->
+        <activity
+            android:name="com.psycoolg.ui.components.activities.staticPage.StaticPageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeStatusBarPrimaryColor"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"  />
+
+        <!-- VerifyOtpActivity -->
+        <activity
+            android:name="com.psycoolg.ui.components.activities.verifyOtp.VerifyOtpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeStatusBarPrimaryColor"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <!-- UpdatePasswordActivity -->
+        <activity
+            android:name="com.psycoolg.ui.components.activities.updatePassword.UpdatePassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeStatusBarPrimaryColor"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <!-- HomeActivity -->
+        <activity
+            android:name="com.psycoolg.ui.components.activities.home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeStatusBarPrimaryColor"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <!--UCropActivity-->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeStatusBarPrimaryColor"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.psycoolg"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath" />
+        </provider>
+
+    </application>
+
+</manifest>

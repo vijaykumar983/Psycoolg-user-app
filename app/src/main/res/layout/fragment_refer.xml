@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appBar"
+            layout="@layout/layout_header" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_2sdp"
+            android:background="@drawable/bg_rounded_white"
+            android:layout_margin="@dimen/_15sdp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivRefer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                app:srcCompat="@drawable/ic_refer"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvReferEarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refer_and_earn"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_below="@id/ivRefer"
+                android:textSize="@dimen/txtSizeNormal"
+                android:gravity="center"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:textColor="@color/color_5D5D5D"
+                />
+            <LinearLayout
+                android:id="@+id/linearCopyCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/tvReferEarn"
+                android:gravity="center_vertical"
+                android:weightSum="1"
+                android:clipToPadding="false"
+                android:layout_margin="@dimen/_15sdp"
+                >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btnNormalSize"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/bg_copy_code_rounded"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvReferCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="DOC65"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txtSizeLarge"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCopyCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/txtSizeNormal"
+                    android:text="Copy Code"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/colorWhite"
+                    android:foreground="@drawable/ripple_rec"
+                   android:background="@color/color_01377D"
+                    />
+            </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivShare"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    app:srcCompat="@drawable/ic_share"
+                    android:elevation="@dimen/_2sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:foreground="@drawable/ripple_round"
+                    android:onClick="onClick"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/bg_ovel_rounded_white"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearCurrentBonus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/linearCopyCode"
+                android:background="@color/color_F2F2F2"
+                android:paddingVertical="@dimen/_5sdp"
+                >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCurrentBonusAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 500"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/color_00CC00"
+                android:textSize="@dimen/txtSizeXXLarge"
+               android:layout_gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCurrentBonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Bonus"
+                android:layout_below="@id/tvCurrentBonusAmt"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="@dimen/txtSizeNormal"
+                android:layout_gravity="center"
+                android:textColor="@color/color_5D5D5D"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearAmountEared"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/linearCurrentBonus"
+                android:layout_margin="@dimen/_15sdp"
+                android:gravity="center"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount Eared :"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="@dimen/txtSizeLarge"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAmtEarned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 50"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="@dimen/txtSizeLarge"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_00CC00"
+                   android:layout_marginLeft="@dimen/_5sdp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_below="@id/linearAmountEared"
+               style="@style/view_line"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/view1"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvReferFriend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/row_refer_friend" />
+
+                <include
+                    android:id="@+id/layoutError"
+                    layout="@layout/layout_small_error_show" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

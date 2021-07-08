@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/HW_MM">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_25sdp"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/ic_sp1" />
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        style="@style/HW_WM_O_V"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_30sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            style="@style/HW_WM"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center_horizontal"
+            android:text="hello"
+            android:textColor="@color/color_01377D"
+            android:textSize="@dimen/txtSizeXXLarge"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtSubTitle"
+            style="@style/HW_WM"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="hello"
+            android:textColor="@color/color_484848"
+            android:textSize="@dimen/txtSizeNormal" />
+    </LinearLayout>
+
+</RelativeLayout>

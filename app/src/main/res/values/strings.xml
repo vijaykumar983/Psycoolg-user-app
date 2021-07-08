@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Psycoolg</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="default_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <string-array name="titleArray">
+        <item>Online Consultation</item>
+        <item>Laboratory Diagnostics</item>
+        <item>Medical Prescription</item>
+    </string-array>
+
+    <string-array name="subtitleArray">
+        <item>Find and book an appointment with a \nbest psychologist</item>
+        <item>Search and book diagnostic \ntest online</item>
+        <item>Get genuine medicines delivered \nto your doorstep</item>
+    </string-array>
+
+    <!-- String array for Drawer Layout-->
+    <string-array name="drawerNames">
+        <item>Home</item>
+        <item>About Us</item>
+        <item>Blog</item>
+        <item>Support</item>
+        <item>History</item>
+        <item>Refer</item>
+        <item>Privacy &amp; Policy</item>
+        <item>Terms &amp; Conditions</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string-array name="homeItems">
+        <item>My Bookings</item>
+        <item>Offers</item>
+        <item>Quotes</item>
+        <item>History</item>
+    </string-array>
+
+    <string-array name="select_location">
+        <item>Select Location</item>
+        <item>jaipur</item>
+        <item>udaipur</item>
+        <item>kota</item>
+    </string-array>
+
+    <string-array name="select_category">
+        <item>Category</item>
+        <item>Category1</item>
+        <item>Category2</item>
+        <item>Category3</item>
+    </string-array>
+
+    <string-array name="select_blog_category">
+        <item>Blog Category</item>
+        <item>Blog Category1</item>
+        <item>Blog Category2</item>
+        <item>Blog Category3</item>
+    </string-array>
+
+    <string-array name="choose_topic">
+        <item>Choose Topic</item>
+        <item>topic 1</item>
+        <item>topic 2</item>
+        <item>topic 3</item>
+    </string-array>
+
+    <string name="refer_and_earn">Refer and Earn <b>Rs. 50</b> when you pay your first Fees inside the application</string>
+    <string name="text_description">dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</string>
+    <string name="privacy_policy"><u>Privacy and Policy</u></string>
+    <string name="no_internet">No internet connection</string>
+
+    <!--All Validations-->
+    <string name="enter_mobile">Please enter mobile</string>
+    <string name="enter_otp">Please enter OTP</string>
+    <string name="enter_valid_mobile_number">Please enter a valid mobile number</string>
+    <string name="enter_valid_otp">Please enter valid OTP</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="enter_cpassword">Please enter confirm password</string>
+    <string name="minimum_8_characters">Please enter at least 8 characters</string>
+    <string name="password_not_match">Password and confirm password do not match</string>
+    <string name="enter_address">Please enter address</string>
+    <string name="enter_your_bio">Please enter your bio</string>
+    <string name="minimum_3_char_long_address">Please enter address at least 3 characters long</string>
+    <string name="minimum_3_char_long_name">Please enter name at least 3 characters long</string>
+    <string name="minimum_3_char_long_fname">Please enter first name at least 3 characters long</string>
+    <string name="minimum_3_char_long_lname">Please enter last name at least 3 characters long</string>
+    <string name="minimum_3_char_long_review">Please enter review at least 3 characters long</string>
+    <string name="minimum_3_char_long_msg">Please enter message at least 3 characters long</string>
+    <string name="minimum_3_char_long_bio">Please enter bio at least 3 characters long</string>
+    <string name="enter_name">Please enter name</string>
+    <string name="enter_fname">Please enter first name</string>
+    <string name="enter_lname">Please enter last name</string>
+    <string name="enter_email">Please enter email id</string>
+    <string name="enter_valid_email_id">Please enter a valid email id</string>
+    <string name="please_select_image">Please select image</string>
+    <string name="enter_msg">Please enter review</string>
+    <string name="enter_your_msg">Please enter your message</string>
+    <string name="api_failure">Something went wrong.Please try again later</string>
+    <string name="permission_required">Permissions Required</string>
+    <string name="you_have_forcefully">You have forcefully denied some of the required permissions</string>
+    <string name="for_this_action">for this action. Please open settings, go to permissions and allow them.</string>
+
+
+</resources>

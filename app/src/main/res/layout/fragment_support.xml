@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appBar"
+            layout="@layout/layout_header" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:background="@drawable/bg_rounded_location"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:weightSum="1">
+
+                <!--<Spinner
+                    android:id="@+id/spinnerLocation"
+                    style="@style/spinnerDropDownItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/color_D6E7FF"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/choose_topic"
+                    android:foreground="@drawable/ripple_rec"
+                    android:popupBackground="@color/white" />-->
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvChooseTopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/color_D6E7FF"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:focusable="true"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:foreground="@drawable/ripple_rec"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Choose Topic"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/ic_down_arrow" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_15sdp"
+                android:background="@drawable/bg_edit_rounded"
+                android:fontFamily="@font/montserrat_light"
+                android:gravity="top|left"
+                android:hint="Type your message...."
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLines="10"
+                android:minHeight="@dimen/_70sdp"
+                android:minLines="5"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_B7B7B7"
+                android:textSize="@dimen/txtSizeNormal" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:layout_margin="@dimen/_15sdp"
+                android:background="@drawable/bg_rounded_dark_blue_7sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:foreground="@drawable/ripple_rec"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/txtSizeNormal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:foreground="@drawable/ripple_rec"
+                    android:onClick="onClick"
+                    android:text="or"
+                    android:textColor="@color/color_004EB4"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmailId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:foreground="@drawable/ripple_rec"
+                    android:onClick="onClick"
+                    android:text="support@psycoolg.com"
+                    android:textColor="@color/color_004EB4"
+                    android:textSize="@dimen/txtSizeLarge" />
+
+                <LinearLayout
+                    android:id="@+id/linearContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnNormalSize"
+                    android:background="@drawable/bg_rounded_support_7sdp"
+                    android:foreground="@drawable/ripple_rec"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:onClick="onClick"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:src="@drawable/ic_phone_call" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="+91-999999999"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/txtSizeLarge" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

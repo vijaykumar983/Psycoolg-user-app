@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="@dimen/_15sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="@dimen/logo_width"
+                android:layout_height="@dimen/logo_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/_60sdp"
+                android:src="@drawable/logo_blue" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUpdatePass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivLogo"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Update Password"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtSizeXLarge" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etNewPass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:layout_below="@id/tvUpdatePass"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_edit_rounded"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="New Password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textColorHint="@color/color_B7B7B7"
+                android:textSize="@dimen/txtSizeNormal" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etConfirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:layout_below="@id/etNewPass"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_edit_rounded"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textColorHint="@color/color_B7B7B7"
+                android:textSize="@dimen/txtSizeNormal" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUpdatePass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:layout_below="@id/etConfirmPass"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@drawable/bg_rounded_dark_blue_7sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:foreground="@drawable/ripple_rec"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/txtSizeNormal" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

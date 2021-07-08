@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+   android:id="@+id/rowHomeItem"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_110sdp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_rounded_white"
+    android:padding="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_10sdp"
+    android:layout_marginHorizontal="@dimen/_15sdp"
+    android:gravity="center"
+    android:onClick="onClick"
+    android:foreground="@drawable/ripple_rec"
+    android:elevation="@dimen/_2sdp"
+    >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivItem"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/placeholder"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Bookings"
+        android:textSize="@dimen/txtSizeNormal"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+</LinearLayout>
+</layout>

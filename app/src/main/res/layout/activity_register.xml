@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_15sdp"
+            android:clipToPadding="false"
+            >
+
+          <androidx.appcompat.widget.AppCompatImageView
+              android:id="@+id/ivLogo"
+              android:layout_width="@dimen/logo_width"
+              android:layout_height="@dimen/logo_height"
+              android:src="@drawable/logo_blue"
+              android:layout_centerHorizontal="true"
+             android:layout_marginVertical="@dimen/_30sdp"
+              />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New Account"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textSize="@dimen/txtSizeXLarge"
+                android:layout_below="@id/ivLogo"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_centerHorizontal="true"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:hint="First Name"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:background="@drawable/bg_edit_rounded"
+                android:layout_below="@id/tvCreateAccount"
+                android:fontFamily="@font/montserrat_light"
+                android:textColorHint="@color/color_B7B7B7"
+                android:textSize="@dimen/txtSizeNormal"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:hint="Last Name"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:background="@drawable/bg_edit_rounded"
+                android:layout_below="@id/etFirstName"
+                android:fontFamily="@font/montserrat_light"
+                android:textColorHint="@color/color_B7B7B7"
+                android:textSize="@dimen/txtSizeNormal"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:hint="Email"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/bg_edit_rounded"
+                android:layout_below="@id/etLastName"
+                android:fontFamily="@font/montserrat_light"
+                android:textColorHint="@color/color_B7B7B7"
+                android:textSize="@dimen/txtSizeNormal"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etMobile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:hint="Mobile"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:background="@drawable/bg_edit_rounded"
+                android:layout_below="@id/etEmail"
+                android:fontFamily="@font/montserrat_light"
+                android:textColorHint="@color/color_B7B7B7"
+                android:textSize="@dimen/txtSizeNormal"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_below="@id/etMobile"
+                android:background="@drawable/bg_edit_rounded"
+                android:fontFamily="@font/montserrat_light"
+                android:textColorHint="@color/color_B7B7B7"
+                android:textSize="@dimen/txtSizeNormal"
+                android:singleLine="true"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:layout_below="@id/etPassword"
+                android:background="@drawable/bg_edit_rounded"
+                android:fontFamily="@font/montserrat_light"
+                android:textColorHint="@color/color_B7B7B7"
+                android:textSize="@dimen/txtSizeNormal"
+                android:singleLine="true"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etReferCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:hint="Referral code"
+                android:inputType="text"
+                android:layout_below="@id/etConfirmPassword"
+                android:background="@drawable/bg_edit_rounded"
+                android:fontFamily="@font/montserrat_light"
+                android:textColorHint="@color/color_B7B7B7"
+                android:textSize="@dimen/txtSizeNormal"
+                android:singleLine="true"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/linearPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@id/etReferCode"
+                android:visibility="gone"
+                >
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkboxPrivacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPrivacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/privacy_policy"
+                   android:layout_toRightOf="@id/checkboxPrivacy"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textAllCaps="false"
+                    android:foreground="@drawable/ripple_rec"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_B7B7B7"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:textSize="@dimen/txtSizeNormal"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:layout_below="@id/linearPrivacyPolicy"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/colorWhite"
+                android:foreground="@drawable/ripple_rec"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:background="@drawable/bg_rounded_dark_blue_7sdp"
+                />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:layout_below="@id/btnSignUp"
+           android:layout_marginTop="@dimen/_30sdp"
+           android:gravity="center_horizontal|bottom"
+           >
+           <androidx.appcompat.widget.AppCompatTextView
+               android:id="@+id/tvAlreadyAccount"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Already have an account?"
+               android:textColor="@color/color_B7B7B7"
+               android:textAllCaps="false"
+               android:textSize="@dimen/txtSizeNormal"
+               android:fontFamily="@font/montserrat_regular"
+               />
+           <androidx.appcompat.widget.AppCompatTextView
+               android:id="@+id/tvSignIn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Sign In"
+               android:onClick="onClick"
+               android:textColor="@color/color_004EB4"
+               android:textAllCaps="false"
+               android:foreground="@drawable/ripple_rec"
+               android:textSize="@dimen/txtSizeNormal"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:fontFamily="@font/montserrat_semibold"
+               />
+
+       </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

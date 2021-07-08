@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#004EB4</color>
+    <color name="colorPrimaryDark">#01377D</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary1">#01FFFF</color>
+
+    <color name="statusBarSplash">#2460AD</color>
+    <color name="statusBarAll">#F7F8FD</color>
+    <color name="statusBarDashboard">#6EB4EC</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBorder">#D5D5D5</color>
+    <color name="colorRed">#EC1010</color>
+    <color name="colorGray">#C4BFBE</color>
+    <color name="colorParrot">#03F80D</color>
+    <color name="color_01377D">#01377D</color>
+    <color name="color_D1D1D1">#D1D1D1</color>
+    <color name="color_004EB4">#004EB4</color>
+    <color name="color_B7B7B7">#B7B7B7</color>
+    <color name="color_5D5D5D">#5D5D5D</color>
+    <color name="color_00CC00">#00CC00</color>
+    <color name="color_F2F2F2">#F2F2F2</color>
+    <color name="color_FFC107">#FFC107</color>
+    <color name="color_D6E7FF">#D6E7FF</color>
+    <color name="color_7BA1FF">#7BA1FF</color>
+
+    <color name="color_484848">#484848</color>
+    <color name="color_B4B4B4">#B4B4B4</color>
+    <color name="color_view">#F2F2F2</color>
+    <color name="transparent_black_50">#80000000</color>
+    <color name="color_3C87E9">#3C87E9</color>
+    <color name="color_9E9E9E">#9E9E9E</color>
+</resources>

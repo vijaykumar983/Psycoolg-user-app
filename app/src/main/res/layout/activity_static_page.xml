@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+           >
+
+            <include
+                android:id="@+id/appBar"
+                layout="@layout/layout_header" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUpdatePass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/default_txt"
+                android:textAllCaps="false"
+                android:padding="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:layout_below="@id/appBar"
+                android:textSize="@dimen/txtSizeNormal" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

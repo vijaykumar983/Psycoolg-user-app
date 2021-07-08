@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/rowReferItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/ripple_rec"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:padding="@dimen/_5sdp"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/txtSizeNormal"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vijay Kumawat"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/txtSizeNormal"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBonusAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+500"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/color_00CC00"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="@dimen/txtSizeNormal"
+            />
+
+    </LinearLayout>
+</layout>
